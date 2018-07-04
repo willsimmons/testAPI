@@ -1,0 +1,16 @@
+{
+  "name": "testapi",
+  "version": "1.0.0",
+  "description": "Node/hapi/Mongo/Swagger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Will Simmons",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^17.5.2",
+    "nodemon": "^1.17.5"
+  }
+}
