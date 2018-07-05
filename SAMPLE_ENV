@@ -1,0 +1,8 @@
+SERVER_PORT=3000
+SERVER_HOST=localhost
+DB_USER=primary
+DB_PASSWORD=primary
+DB_PORT=27017
+DB_NAME=testAPI
+DB_HOST=localhost
+
