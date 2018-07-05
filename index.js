@@ -1,6 +1,6 @@
 require('dotenv').config();
+const routes = require('./routes').routeTable;
 const hapi = require('hapi');
-
 const {DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME, SERVER_PORT, SERVER_HOST} = process.env;
 
 //MongoDB
@@ -16,13 +16,7 @@ const server = hapi.server({
 });
 
 const init = async () => {
-  server.route({
-    method: 'GET',
-    path: '/',
-    handler: function(request,reply){
-      return'<h1>Hello World </h1>';
-    }
-  });
+  server.route(routes);
   await server.start();
   console.log(`Server running at ${server.info.uri}`);
 };
