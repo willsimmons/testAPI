@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 
 const ItemSchema = new Schema({
   name: String,
-  colors: [String],
+  colors: String,
 });
 
 module.exports = mongoose.model('Item', ItemSchema);
